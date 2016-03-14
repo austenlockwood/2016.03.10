@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.container{
+  background-color: #57A1D8;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px;
+}
+
+[class*='col-']  {
+  float: left;
+  /*min-height: 1px;*/
+  width: 33.33%;
+  min-width: 200px;
+}
+
+[class*='col-']:last-of-type  {
+  padding-right: 0;
+}
+
+.box  {
+  float: left;
+  min-height: 30px;
+  width: 90%;
+  box-sizing: border-box;
+  border: 4px solid white;
+  position: relative;
+  margin-left: 5%;
+}
+
+.box:hover  {
+  border-color: #1a5e7e;
+}
+
+form  {
+  float: left;
+  min-height: 30px;
+  width: 90%;
+  box-sizing: border-box;
+  border: 3px solid white;
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  color: white;
+  padding: 5px;
+}
+
+form:hover  {
+  border-color: #1a5e7e;
+}
+
+select {
+  background-color: inherit;
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  border: 0px;
+  /*border:0px gets rid of the input outline*/
+}
+
+input {
+  background-color: inherit;
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  border: 0px;
+  outline: 0px;
+  /*border:0px gets rid of the input outline*/
+}
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #1a5e7e;
+      font-style: italic;
+      font-weight: bold;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #1a5e7e;
+      font-style: italic;
+      font-weight: bold;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #1a5e7e;
+      font-style: italic;
+      font-weight: bold;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #1a5e7e;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+#spacer {
+  float: left;
+  min-height: 30px;
+  width: 90%;
+  box-sizing: border-box;
+  border: 3px solid #57A1D8;
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: -1%;
+  color: white;
+  font-size: 0.9em;
+}
+
+#bio, #affiliations, #comments  {
+  height: 150px;
+}
